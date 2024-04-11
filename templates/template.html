@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>template</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link type="text/css" rel="stylesheet" href="{{template_style}}" />
+    <link type="text/css" rel="stylesheet" href="{{index_style}}" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <!-- TODO: search for 正在施工中 for all todo lists -->
+    <nav class="top-nav transparent">
+        <ul>
+            <li>
+                <a href="/" class="icon transparent">
+                    <img src="{{ url_for('static', filename='favicon.ico') }}" alt="icon" height="30">
+                </a>
+            </li>
+            <li><a href="/" class="remove-nav-box transparent">主页</a></li>
+            <!-- TODO change the links -->
+            <li><a href="/item1" id="item1" class="transparent">施工</a></li>
+            <li><a href='/item2' id="item2" class="transparent">施工</a></li>
+            <li><a href="/item3" id="item3" class="transparent">施工</a></li>
+
+
+            <li>
+                <a class="remove-nav-box transparent" id="cursor-btn"><span class="material-symbols-outlined">
+                        arrow_selector_tool</span></a>
+            </li>
+            <li style="margin-top: -5px;">
+                <a class="remove-nav-box transparent">
+                    <span class="material-symbols-outlined" id="cursor_effect_btn2" style="font-size: 30px;">
+                        web_traffic
+                    </span>
+                    <img src="/static/images/off-button.png" height="30" class="cursor_effect_btn"
+                        id="cursor_effect_off" style="display:inline">
+                    <img src="/static/images/on-button.png" height="30" class="cursor_effect_btn" id="cursor_effect_on"
+                        style="display:none">
+                </a>
+            </li>
+            <li>
+                <a id="search" class="transparent">
+                    <span class="material-symbols-outlined" style="font-size: 30px;">search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- TODO change the boxes -->
+    <div class="navbox transparent" id="item1-box">
+        <ul class="all-lists" style="width: 100%;">
+            <li class="list1">
+                <a class="no-hover">探索 施工</a>
+                <ul>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+
+                </ul>
+            </li>
+            <li class="list2">
+                <a class="no-hover">探索 施工</a>
+                <ul>
+                    <li><a href="/"></a></li>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+                </ul>
+            </li>
+            <li class="list2">
+                <a class="no-hover">正在施工中</a>
+                <ul>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+                </ul>
+            </li>
+            <li class="list2">
+                <a class="no-hover">正在施工中</a>
+                <ul>
+                    <li><a href="/">正在施工中</a></li>
+                </ul>
+            </li>
+            <li class="list2">
+                <a class="no-hover">正在施工中</a>
+                <ul>
+                    <li><a href="/">正在施工中</a></li>
+                </ul>
+            </li>
+            <li class="list2">
+                <a class="no-hover">正在施工中</a>
+                <ul>
+                    <li><a href="/">正在施工中</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="navbox transparent" id="item2-box">
+        <ul class="all-lists">
+            <li class="list1">
+                <a class="no-hover">正在施工中</a>
+                <ul>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+
+                </ul>
+            </li>
+            <li class="list2">
+                <a class="no-hover">正在施工中</a>
+                <ul>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+                </ul>
+            </li>
+            <li class="list2">
+                <a class="no-hover">正在施工中</a>
+                <ul>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+                </ul>
+            </li>
+            <li class="list2">
+                <a class="no-hover">正在施工中</a>
+                <ul>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="navbox transparent" id="item3-box">
+        <ul class="all-lists">
+            <li class="list1">
+                <a class="no-hover">正在施工中</a>
+                <ul>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+
+                </ul>
+            </li>
+            <li class="list2">
+                <a class="no-hover">正在施工中</a>
+                <ul>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+
+                </ul>
+            </li>
+            <li class="list2">
+                <a class="no-hover">正在施工中</a>
+                <ul>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+                </ul>
+            </li>
+            <li class="list2">
+                <a class="no-hover">正在施工中</a>
+                <ul>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+                    <li><a href="/">正在施工中</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+
+    <div class="navbox transparent" id="search-box">
+        <div id="search-container">
+            <img src="/static/images/logo.png" height="30">
+            <input type="text" name="search" id="search-input" placeholder="搜索 正在施工中" class="search-input-transparent"
+                required>
+            <a id="search-btn">
+                <span class="material-symbols-outlined" style="font-size: 30px;">search</span>
+            </a>
+        </div>
+        <div>
+            <ul>
+                <li class="no-hover" style="font-size: 80%;"><a>快速链接</a></li>
+                <li><a>正在施工中</a></li>
+                <li><a>正在施工中</a></li>
+                <li><a>正在施工中</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div class="option-box" id="cursor-box">
+        <ul id="cursor-container">
+        </ul>
+    </div>
+
+    <div id="about-us-container" style="display:none">
+        <p>正在施工中</p>
+    </div>
+
+    <div id="main-container">
+        {{ main_content|safe }}
+    </div>
+
+    <!-- TODO change the sublists  -->
+    <div id="bottom-bar">
+        <ul>
+            <li>
+                <p>Copyright &copy 2024 TODO </p>
+            </li>
+            <li style=" width: fit-content;">
+                <div class="bottom-bar-divider"></div>
+            </li>
+            <li>
+                <p>Follow us</p>
+
+                <a href="/" target="_blank"><img src="./static/images/media/instagram.svg" alt="instagram" height="20">
+                </a>
+                <a href="/" target="_blank"><img src="./static/images/media/pinterest.svg" alt="pinterest"
+                        height="20"></a>
+                <a href="/" target="_blank"><img src="./static/images/media/xhs.png" alt="xhs" height="20"></a>
+            </li>
+            <li style=" width: fit-content;">
+                <div class="bottom-bar-divider"></div>
+            </li>
+            <li>
+                <p> Contact us</p>
+                <a href="/"><img src="./static/images/media/email.svg" alt="email" height="20"></a>
+            </li>
+            <li style=" width: fit-content;">
+                <div class="bottom-bar-divider"></div>
+            </li>
+            <li style="width: 80px;">
+                <p><a id="about-us">About us</a></p>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+<script>
+    const scroll_effect_height = "{{scroll_effect_height}}";
+    // window.scroll_effect_height = "{{scroll_effect_height}}";
+</script>
+<script src=" {{template_script}}"></script>
+<script src=" {{index_script}}"></script>
+
+</html>
